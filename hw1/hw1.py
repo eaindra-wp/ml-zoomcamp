@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 def main():
-    HERE = Path(__file__).parent
+    HERE = Path(__file__).parent.parent
     df = pd.read_csv(HERE / "car_fuel_efficiency_2026.csv")
 
     print(f'ANSWERS:')
