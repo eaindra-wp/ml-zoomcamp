@@ -76,7 +76,7 @@ def exercises(df: pd.DataFrame):
     print(f'6. {np.array(regularized).argmax()}')
 
 def main():
-    HERE = Path(__file__).parent
+    HERE = Path(__file__).parent.parent
     df = pd.read_csv(HERE / "course_lead_scoring_2026.csv")
 
     df = df.fillna({
